@@ -6,6 +6,7 @@ import slider1 from "../../assets/images/slider1.webp";
 import slider2 from "../../assets/images/slider2.webp";
 import slider3 from "../../assets/images/slider3.webp";
 import slider4 from "../../assets/images/slider4.webp";
+import CardComponent from "../../components/CardComponent/CardComponent";
 
 const HomePage = () => {
   const arr = [
@@ -28,6 +29,9 @@ const HomePage = () => {
       </div>
       <div id="container" style={{ backgroundColor: "#efefef",padding:"0 120px" }}>
         <SliderComponet arrImages={[slider1, slider2, slider3, slider4]} />
+        <div style={{marginTop:'20px',display:'flex',alignItems:'center',gap:'20px', height:'400px'}}>
+          <CardComponent/>
+        </div>
       </div>
     </>
   );

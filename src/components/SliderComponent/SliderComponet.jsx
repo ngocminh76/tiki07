@@ -1,6 +1,7 @@
 import { Image } from "antd";
 import React from "react";
 import Slider from "react-slick";
+
 const SliderComponet = ({ arrImages }) => {
   const settings = {
     dots: true,
@@ -20,7 +21,7 @@ const SliderComponet = ({ arrImages }) => {
             alt="slider"
             preview={false}
             width="100%"
-            height="474px"
+            height="274px"
           />
         );
       })}
