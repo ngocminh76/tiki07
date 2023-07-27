@@ -17,7 +17,7 @@ const HeaderComponent = () => {
     <div>
       <WrapperHeader gutter={16}>
         <Col span={6}>
-          <WrapperTextHeader>LẬP TRÌNH THẬT DỄ</WrapperTextHeader>
+          <WrapperTextHeader>TIKI -FAKE</WrapperTextHeader>
         </Col>
         <Col span={12}>
           <ButtonInputSearch
