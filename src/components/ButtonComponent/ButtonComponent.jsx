@@ -6,6 +6,7 @@ const ButtonComponent = ({
   styleButton,
   styleTextButton,
   textButton,
+  borderRadius,
   ...rests
 }) => {
   return (
@@ -13,7 +14,6 @@ const ButtonComponent = ({
       size={size}
       style={styleButton}
       {...rests}
-      //   icon={<SearchOutlined style={{ color: colorButton }} />}
     >
       <span style={styleTextButton}> {textButton}</span>
     </Button>
