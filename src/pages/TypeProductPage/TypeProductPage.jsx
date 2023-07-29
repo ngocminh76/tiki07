@@ -7,36 +7,38 @@ import { WrappeProducts, WrapperNavBar } from "./style";
 const TypeProductPage = () => {
   const onChange = () => {};
   return (
-    <div style={{ padding: "0 120px", background: "#efefef" }}>
-      <Row
-        style={{
-          flexWrap: "nowrap",
-          paddingTop: "10px",
-        }}
-      >
-        <WrapperNavBar span={4}>
-          <NavbarComponent />
-        </WrapperNavBar>
-
-        <Col span={20}>
-          <WrappeProducts>
-            <CardComponent />
-            <CardComponent />
-            <CardComponent />
-            <CardComponent />
-            <CardComponent />
-            <CardComponent />
-            <CardComponent />
-          </WrappeProducts>
-          <Pagination
-            defaultCurrent={2}
-            total={100}
-            onChange={onChange}
-            style={{ textAlign: "center", marginTop: "10px" }}
-          />
-        </Col>
-      </Row>
-    </div>
+  <div style={{width:'100%', background:'#efefef'}}>
+        <div style={{ margin: "0 auto", width:'1270px' }}>
+          <Row
+            style={{
+              flexWrap: "nowrap",
+              paddingTop: "10px",
+            }}
+          >
+            <WrapperNavBar span={4}>
+              <NavbarComponent />
+            </WrapperNavBar>
+    
+            <Col span={20}>
+              <WrappeProducts>
+                <CardComponent />
+                <CardComponent />
+                <CardComponent />
+                <CardComponent />
+                <CardComponent />
+                <CardComponent />
+                <CardComponent />
+              </WrappeProducts>
+              <Pagination
+                defaultCurrent={2}
+                total={100}
+                onChange={onChange}
+                style={{ textAlign: "center", marginTop: "10px" }}
+              />
+            </Col>
+          </Row>
+        </div>
+  </div>
   );
 };
 
